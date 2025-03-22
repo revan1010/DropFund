@@ -1,0 +1,301 @@
+.claim-portal-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #f8f9fa;
+}
+
+.claim-portal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #5e72e4, #11cdef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.claim-instructions {
+  margin-bottom: 2rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border-left: 4px solid #5e72e4;
+}
+
+.claim-instructions h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+  font-size: 1.5rem;
+}
+
+.claim-instructions p {
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.claim-alert {
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.claim-alert::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.claim-alert-warning {
+  background: rgba(255, 152, 0, 0.1);
+  border-left: 4px solid #ff9800;
+}
+
+.claim-alert-warning::before {
+  background-color: var(--warning);
+}
+
+.claim-alert-info {
+  background: rgba(17, 205, 239, 0.1);
+  border-left: 4px solid #11cdef;
+}
+
+.claim-alert-info::before {
+  background-color: var(--secondary);
+}
+
+.registration-form {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.registration-form h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #f8f9fa;
+}
+
+.registration-form p {
+  margin-bottom: 24px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.phone-input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.phone-input-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa;
+}
+
+.phone-input-wrapper input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.phone-input-wrapper input:focus {
+  outline: none;
+  border-color: #5e72e4;
+  box-shadow: 0 0 0 2px rgba(94, 114, 228, 0.3);
+}
+
+.register-button, 
+.check-button, 
+.reassign-button, 
+.claim-button {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.register-button {
+  background: linear-gradient(45deg, #5e72e4, #825ee4);
+  color: white;
+}
+
+.register-button:hover {
+  background: linear-gradient(45deg, #4a5dd0, #7046d4);
+  transform: translateY(-2px);
+}
+
+.check-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f9fa;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.check-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.reassign-button {
+  background: linear-gradient(45deg, #fb6340, #ffc107);
+  color: white;
+}
+
+.reassign-button:hover {
+  background: linear-gradient(45deg, #ea5c3d, #edaf0f);
+  transform: translateY(-2px);
+}
+
+.claim-button {
+  background: linear-gradient(45deg, #2dce89, #11cdef);
+  color: white;
+}
+
+.claim-button:hover {
+  background: linear-gradient(45deg, #28bb7d, #11b6d3);
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.success-message,
+.error-message {
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.success-message {
+  background: rgba(45, 206, 137, 0.1);
+  border-left: 4px solid #2dce89;
+  color: #2dce89;
+}
+
+.error-message {
+  background: rgba(251, 99, 64, 0.1);
+  border-left: 4px solid #fb6340;
+  color: #fb6340;
+}
+
+.direct-claim {
+  background: rgba(45, 206, 137, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border: 1px solid rgba(45, 206, 137, 0.2);
+}
+
+.direct-claim h3 {
+  margin-top: 0;
+  color: #2dce89;
+}
+
+.direct-claim p {
+  margin-bottom: 1rem;
+}
+
+.direct-claim strong {
+  color: #f8f9fa;
+}
+
+.claimed-ngos {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(45deg, #5e72e4, #11cdef);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.ngo-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ngo-card {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ngo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ngo-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  color: #f8f9fa;
+}
+
+.ngo-card-content {
+  margin-bottom: 1.5rem;
+}
+
+.ngo-amount {
+  color: #11cdef;
+  font-weight: bold;
+}
+
+.claimed-badge,
+.pending-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.claimed-badge {
+  background-color: rgba(45, 206, 137, 0.1);
+  color: #2dce89;
+}
+
+.pending-badge {
+  background-color: rgba(17, 205, 239, 0.1);
+  color: #11cdef;
+}
+
+@media (max-width: 768px) {
+  .claim-portal-container {
+    padding: 1rem;
+  }
+  
+  .ngo-cards {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,279 @@
+:root {
+  /* Color Palette */
+  --primary: #6c5ce7;
+  --primary-dark: #5649d3;
+  --secondary: #0abde3;
+  --accent: #00d2d3;
+  --success: #00e676;
+  --warning: #ffa500;
+  --error: #ff5252;
+  --background: #0f0e17;
+  --surface-1: #1a1926;
+  --surface-2: #25243a;
+  --text-primary: #ffffff;
+  --text-secondary: #c4c4c4;
+  --border-radius: 12px;
+  --box-shadow: 0 8px 32px rgba(108, 92, 231, 0.15);
+  --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-button: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  --grid-gap: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+/* Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--surface-1);
+  border-radius: var(--border-radius);
+  padding: 24px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(108, 92, 231, 0.25);
+}
+
+/* Buttons */
+button, .btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background: var(--gradient-button);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--surface-2);
+  color: var(--text-primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(108, 92, 231, 0.1);
+}
+
+/* Form Elements */
+input, textarea, select {
+  background-color: var(--surface-2);
+  border: 2px solid var(--surface-2);
+  border-radius: var(--border-radius);
+  padding: 12px 16px;
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+  width: 100%;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(10, 189, 227, 0.25);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+.mb-3 {
+  margin-bottom: 24px;
+}
+
+.mb-4 {
+  margin-bottom: 32px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mt-3 {
+  margin-top: 24px;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--grid-gap);
+}
+
+/* Web3 Elements */
+.wallet-connect {
+  background-color: var(--surface-2);
+  padding: 8px 16px;
+  border-radius: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  border: 1px solid rgba(108, 92, 231, 0.3);
+}
+
+.wallet-connect.connected {
+  background-color: rgba(0, 210, 211, 0.1);
+  border-color: var(--accent);
+}
+
+/* Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.5);
+  }
+}
+
+.glow {
+  animation: glow 2s infinite;
+}
+
+/* Glassmorphism effects */
+.glass {
+  background: rgba(26, 25, 38, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Status Indicators */
+.badge {
+  display: inline-flex;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge-primary {
+  background-color: rgba(108, 92, 231, 0.2);
+  color: var(--primary);
+}
+
+.badge-success {
+  background-color: rgba(0, 230, 118, 0.2);
+  color: var(--success);
+}
+
+.badge-warning {
+  background-color: rgba(255, 165, 0, 0.2);
+  color: var(--warning);
+}
+
+.badge-error {
+  background-color: rgba(255, 82, 82, 0.2);
+  color: var(--error);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .container {
+    padding: 0 24px;
+  }
+} 

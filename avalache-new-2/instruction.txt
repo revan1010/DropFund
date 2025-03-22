@@ -1,0 +1,23 @@
+Project Scope: Bulk Donation dApp (Avalanche Fuji)
+🎯 Core Features
+
+NGO Registration
+- NGOs create an account (wallet-based auth)
+- Their registration info is stored on-chain
+- NGOs can load/deposit funds (AVAX or USDC) into the contract
+
+PDF Upload
+- NGO uploads a PDF containing rows of:
+  Phone Number | Wallet Address | Amount
+- Frontend parses the PDF and extracts data client-side
+
+Bulk Transactions
+- The smart contract stores the parsed recipient data
+- Funds remain in escrow until claimed by recipients
+
+Recipient Claim Portal
+- Users log in with phone number (mock OTP verification)
+- Users connect their wallet
+- Dashboard shows available funds from NGOs
+- Claim button transfers funds to user's wallet
+- No backend database - all data stored on-chain
